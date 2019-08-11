@@ -5,13 +5,13 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/codegangsta/negroni"
+	"github.com/urfave/negroni"
 )
 
 func main() {
 	port := os.Getenv("PORT")
 	if len(port) == 0 {
-		port = "8080"
+		port = "8084"
 	}
 
 	mux := http.NewServeMux()
